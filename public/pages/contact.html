@@ -1,0 +1,48 @@
+<head>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
+   %%PAGE_CSS_LINK%%
+</head>
+
+<div class="container">
+    <h1 class="brand"><span>Santa</span> Mail</h1>
+    <div class="wrapper animated bounceInLeft">
+      <div class="company-info">
+        <h3>Send a mail to Santa</h3>
+        <ul>
+          <li><i class="fa fa-road"></i> North Pole</li>
+          <li><i class="fa fa-envelope"></i> santa@gmail.com</li>
+        </ul>
+      </div>
+      <div class="contact">
+        <h3>Email Me</h3>
+        {msg}
+        <form method="POST" action="/send">
+          <p>
+            <label>My name is</label>
+            <input type="text" name="name">
+          </p>
+          <p>
+            <label>My age is</label>
+            <input type="number" name="age">
+          </p>
+          <p>
+            <label> I live in </label>
+            <input type="text" name="address">
+          </p>
+          <p>
+            <label>My email is</label>
+            <input type="email" name="email">
+          </p>
+          
+          <p class="full">
+            <label>What I wish for Chrismas</label>
+            <textarea name="wishes" rows="5"></textarea>
+          </p>
+          <p class="full">
+            <button type="submit">Submit</button>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
